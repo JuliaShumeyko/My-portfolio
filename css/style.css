@@ -1,9 +1,51 @@
-/* Home page style */
+/* Top navbar styles */
 
-.html {
-  height: 100%;
-  min-height: 100%;
+nav {
+  text-align: center;
 }
+
+.nav1 {
+  height: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Cardo";
+  background-color: #353535;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.nav1 a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  width: 25%;
+  float: left;
+  display: block;
+}
+
+.nav1 a:hover {
+  color: #353535;
+  background: #f2f2f2;
+  font-family: "Cardo";
+  font-weight: bold;
+  padding: 13.5px 0px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav1 a {
+    font-size: 3vw;
+  }
+}
+
+/* Home Page Header styles */
+
 .top {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -12,8 +54,6 @@
   margin: 65px auto 25px auto;
   position: relative;
 }
-
-
 .name {
   font-family: "Oswald";
   text-transform: uppercase;
@@ -60,60 +100,7 @@
   text-align: right;
 }
 
-nav {
-  text-align: center;
-}
-
-.nav1 {
-  height: 50px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-family: "Cardo";
-  background-color: #353535;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-}
-
-.nav1 a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px 0px;
-  text-decoration: none;
-  font-size: 18px;
-  text-align: center;
-  width: 25%;
-  float: left;
-  display: block;
-}
-
-.nav1 a:hover {
-  color: #353535;
-  background: #f2f2f2;
-  font-family: "Cardo";
-  font-weight: bold;
-  padding: 13.5px 0px;
-  border-radius: 5px;
-}
-
-@media screen and (max-width: 600px) {
-  .nav1 a {
-    font-size: 3vw;
-  }
-}
-
-.nav2 a {
-  font-size: 30px;
-}
-
-.nav2 {
-  padding: 15px;
-  width: 50%;
-  margin: auto;
-  position: relative;
-}
+/* Home Page Sections style */
 
 section {
   padding: 20px;
@@ -125,10 +112,23 @@ section {
   font-family: "Cardo";
 }
 
+/* Footer style */
+
 footer {
   padding: 30px;
   margin: 30px;
   text-align: center;
+  position: relative;
+}
+
+.nav2 a {
+  font-size: 30px;
+}
+
+.nav2 {
+  padding: 15px;
+  width: 50%;
+  margin: auto;
   position: relative;
 }
 
@@ -205,7 +205,7 @@ footer {
   position: relative;
   margin: 80px auto;
   background-color: lightsteelblue;
-  padding: 10px 20px;
+  padding: 20px 20px;
   width: 300px;
 }
 
